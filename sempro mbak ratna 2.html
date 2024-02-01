@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Sempro</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .emoji {
+      font-size: 64px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #ff69b4;
+      color: #fff;
+      font-size: 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff1493;
+    }
+
+    .input-field {
+      display: block;
+      margin: 20px auto;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      width: 300px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Sempro</h1>
+    <p>Let's celebrate the Sempro with joy and excitement!</p>
+    <span class="emoji">😄🎉🥳</span>
+    <form>
+      <input type="text" id="name" class="input-field" placeholder="Enter your name">
+    </form>
+    <p id="greeting" style="display: none;"></p>
+    <button onclick="showGreeting()">Join the Celebration</button>
+  </div>
+
+  <script>
+    function showGreeting() {
+      var name = document.getElementById("name").value;
+      var greeting = document.getElementById("greeting");
+      greeting.innerHTML = "Happy semprotulation Mbak Ratna semoga penelitian sama skripsi dilancarkan dan semoga cepat lulus mbak, " + name + "!";
+      greeting.style.display = "block";
+    }
+  </script>
+</body>
+</html>
